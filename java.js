@@ -1,18 +1,20 @@
 let menu = document.querySelector('#menu-icon');
-let navber = document.querySelector('.navber');
+let navbar = document.querySelector('.navbar'); 
 
-
-menu.onclick = ()=> {
-    menu.classlist.toggle('bx-x');
-    navber.classList.toggle('active');
-
+menu.onclick = () => {
+    menu.classList.toggle('fa-xmark');
+    navbar.classList.toggle('active');
 }
-window.onscroll =()=> {
-    menu.classlist.remove('bx-x');
-    navber.classList.remove('active');
+
+window.onscroll = () => {
+    menu.classList.remove('fa-xmark');
+    navbar.classList.remove('active');
 }
-// Tyoing text/////////////////
-const typad =new typad('.multipe-text',{
-    Strings: ['<i>First</i> sentence.','&amp; a second sentence'],
-    typespeed:50,
+// Typing text 
+const typed = new Typed('.multiple-text', { 
+    strings: ['Junior Front-End Developer', 'Postgraduate Researcher', 'Database Specialist'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 1000,
+    loop: true
 });

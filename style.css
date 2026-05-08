@@ -226,7 +226,47 @@ box-shadow: 0 0 20px var(--main-color);
     background-color: var(--main-color);
     width: 50px;
 }
+/* ////////////Skills//////////// */
 
+
+
+.skills{
+    background: var(--);
+}
+
+.skills-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.skill-box{
+    background: var(--second-bg-color);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.skill-box:hover{
+    border: 2px solid var(--main-color);
+    transform: translateY(-10px) scale(1.03);
+}
+
+.skill-box i{
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.skill-box h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
 /* <!-- /////////////////////portfolio/////////////////// --> */
 
 .portfolio{
